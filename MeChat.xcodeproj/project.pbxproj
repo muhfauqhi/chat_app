@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8FACB9ED64A0B129D4DF7A0A /* Pods_MeChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FDFADEA40442CCD77F06356 /* Pods_MeChat.framework */; };
+		C10A346725E1071100069968 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C10A346625E1071100069968 /* GoogleService-Info.plist */; };
 		C1CB7BC025E0E21700475BF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CB7BBF25E0E21700475BF0 /* AppDelegate.swift */; };
 		C1CB7BC225E0E21700475BF0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CB7BC125E0E21700475BF0 /* SceneDelegate.swift */; };
 		C1CB7BC425E0E21700475BF0 /* ConservationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CB7BC325E0E21700475BF0 /* ConservationsViewController.swift */; };
@@ -19,9 +21,14 @@
 		C1CB7BE725E0E57600475BF0 /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CB7BE625E0E57600475BF0 /* VideoPlayerViewController.swift */; };
 		C1CB7BEA25E0E5A200475BF0 /* NewConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CB7BE925E0E5A200475BF0 /* NewConversationViewController.swift */; };
 		C1CB7BED25E0E5B200475BF0 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CB7BEC25E0E5B200475BF0 /* ProfileViewController.swift */; };
+		C1CB7BF225E0ED1A00475BF0 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CB7BF125E0ED1A00475BF0 /* Extensions.swift */; };
+		C1DB189825E111A900B36195 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DB189725E111A900B36195 /* DatabaseManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4FDFADEA40442CCD77F06356 /* Pods_MeChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A92DA8B8DEB0DF9791F78F81 /* Pods-MeChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeChat.release.xcconfig"; path = "Target Support Files/Pods-MeChat/Pods-MeChat.release.xcconfig"; sourceTree = "<group>"; };
+		C10A346625E1071100069968 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C1CB7BBC25E0E21700475BF0 /* MeChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1CB7BBF25E0E21700475BF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C1CB7BC125E0E21700475BF0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +43,9 @@
 		C1CB7BE625E0E57600475BF0 /* VideoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewController.swift; sourceTree = "<group>"; };
 		C1CB7BE925E0E5A200475BF0 /* NewConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewConversationViewController.swift; sourceTree = "<group>"; };
 		C1CB7BEC25E0E5B200475BF0 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		C1CB7BF125E0ED1A00475BF0 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		C1DB189725E111A900B36195 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		F9E9EE4D20CBB6BA670E58D6 /* Pods-MeChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeChat.debug.xcconfig"; path = "Target Support Files/Pods-MeChat/Pods-MeChat.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,17 +53,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FACB9ED64A0B129D4DF7A0A /* Pods_MeChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6A21DC23EE17DE282BEB5F6C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4FDFADEA40442CCD77F06356 /* Pods_MeChat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C1CB7BB325E0E21700475BF0 = {
 			isa = PBXGroup;
 			children = (
 				C1CB7BBE25E0E21700475BF0 /* MeChat */,
 				C1CB7BBD25E0E21700475BF0 /* Products */,
+				E278E7943FE55B655B2C1D73 /* Pods */,
+				6A21DC23EE17DE282BEB5F6C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,6 +89,7 @@
 		C1CB7BBE25E0E21700475BF0 /* MeChat */ = {
 			isa = PBXGroup;
 			children = (
+				C10A346625E1071100069968 /* GoogleService-Info.plist */,
 				C1CB7BD925E0E40D00475BF0 /* Resources */,
 				C1CB7BD825E0E40400475BF0 /* ViewModels */,
 				C1CB7BD625E0E3F900475BF0 /* Views */,
@@ -82,8 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				C1CB7BC325E0E21700475BF0 /* ConservationsViewController.swift */,
-				C1CB7BDD25E0E53400475BF0 /* LoginViewController.swift */,
-				C1CB7BE025E0E54500475BF0 /* RegisterViewController.swift */,
+				C1CB7BEF25E0E6A900475BF0 /* Login */,
 				C1CB7BE325E0E56600475BF0 /* PhotoViewerViewController.swift */,
 				C1CB7BE625E0E57600475BF0 /* VideoPlayerViewController.swift */,
 				C1CB7BE925E0E5A200475BF0 /* NewConversationViewController.swift */,
@@ -120,6 +141,8 @@
 			children = (
 				C1CB7BBF25E0E21700475BF0 /* AppDelegate.swift */,
 				C1CB7BC125E0E21700475BF0 /* SceneDelegate.swift */,
+				C1CB7BF125E0ED1A00475BF0 /* Extensions.swift */,
+				C1DB189725E111A900B36195 /* DatabaseManager.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -133,6 +156,24 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
+		C1CB7BEF25E0E6A900475BF0 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				C1CB7BDD25E0E53400475BF0 /* LoginViewController.swift */,
+				C1CB7BE025E0E54500475BF0 /* RegisterViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		E278E7943FE55B655B2C1D73 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F9E9EE4D20CBB6BA670E58D6 /* Pods-MeChat.debug.xcconfig */,
+				A92DA8B8DEB0DF9791F78F81 /* Pods-MeChat.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -140,9 +181,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C1CB7BD025E0E21A00475BF0 /* Build configuration list for PBXNativeTarget "MeChat" */;
 			buildPhases = (
+				2DBAE4171098A5FF71E6EC0B /* [CP] Check Pods Manifest.lock */,
 				C1CB7BB825E0E21700475BF0 /* Sources */,
 				C1CB7BB925E0E21700475BF0 /* Frameworks */,
 				C1CB7BBA25E0E21700475BF0 /* Resources */,
+				C705C6BD88620AE64CE030D4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -191,6 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1CB7BCC25E0E21A00475BF0 /* LaunchScreen.storyboard in Resources */,
+				C10A346725E1071100069968 /* GoogleService-Info.plist in Resources */,
 				C1CB7BC925E0E21A00475BF0 /* Assets.xcassets in Resources */,
 				C1CB7BC725E0E21700475BF0 /* Main.storyboard in Resources */,
 			);
@@ -198,16 +242,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2DBAE4171098A5FF71E6EC0B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MeChat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C705C6BD88620AE64CE030D4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MeChat/Pods-MeChat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MeChat/Pods-MeChat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MeChat/Pods-MeChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C1CB7BB825E0E21700475BF0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C1CB7BDE25E0E53400475BF0 /* LoginViewController.swift in Sources */,
+				C1DB189825E111A900B36195 /* DatabaseManager.swift in Sources */,
 				C1CB7BE125E0E54500475BF0 /* RegisterViewController.swift in Sources */,
 				C1CB7BEA25E0E5A200475BF0 /* NewConversationViewController.swift in Sources */,
 				C1CB7BC425E0E21700475BF0 /* ConservationsViewController.swift in Sources */,
 				C1CB7BE725E0E57600475BF0 /* VideoPlayerViewController.swift in Sources */,
+				C1CB7BF225E0ED1A00475BF0 /* Extensions.swift in Sources */,
 				C1CB7BC025E0E21700475BF0 /* AppDelegate.swift in Sources */,
 				C1CB7BED25E0E5B200475BF0 /* ProfileViewController.swift in Sources */,
 				C1CB7BC225E0E21700475BF0 /* SceneDelegate.swift in Sources */,
@@ -355,6 +443,7 @@
 		};
 		C1CB7BD125E0E21A00475BF0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9E9EE4D20CBB6BA670E58D6 /* Pods-MeChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -366,7 +455,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Apple-Inc.MeChat";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MeChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -375,6 +464,7 @@
 		};
 		C1CB7BD225E0E21A00475BF0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A92DA8B8DEB0DF9791F78F81 /* Pods-MeChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -386,7 +476,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Apple-Inc.MeChat";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MeChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
