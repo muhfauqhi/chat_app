@@ -10,4 +10,7 @@ pod 'Firebase/Auth'
 pod 'Firebase/Database'
 pod 'Firebase/Analytics'
 
+# Facebook
+pod 'FBSDKLoginKit'
+
 end

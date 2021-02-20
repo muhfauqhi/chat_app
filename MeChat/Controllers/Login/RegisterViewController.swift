@@ -85,6 +85,24 @@ class RegisterViewController: UIViewController, UINavigationControllerDelegate {
         field.leftViewMode = .always
         //        field.backgroundColor = .white
         field.isSecureTextEntry = true
+        field.textContentType = .password
+        return field
+    }()
+    
+    private let confirmPasswordField: UITextField = {
+        let field = UITextField()
+        field.autocapitalizationType = .none
+        field.autocorrectionType = .no
+        field.returnKeyType = .done
+        field.layer.cornerRadius = 12
+        field.layer.borderWidth = 1
+        field.layer.borderColor = UIColor.lightGray.cgColor
+        field.placeholder = "Confirm Password..."
+        field.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 5, height: 0))
+        field.leftViewMode = .always
+        //        field.backgroundColor = .white
+        field.isSecureTextEntry = true
+        field.textContentType = .newPassword
         return field
     }()
     
@@ -111,8 +129,11 @@ class RegisterViewController: UIViewController, UINavigationControllerDelegate {
         
         registerButton.addTarget(self, action: #selector(registerButtonTapped), for: .touchUpInside)
         
+        firstNameField.delegate = self
+        lastNameField.delegate = self
         emailField.delegate = self
         passwordField.delegate = self
+        confirmPasswordField.delegate = self
         
         // Add subviews
         view.addSubview(scrollView)
@@ -121,6 +142,7 @@ class RegisterViewController: UIViewController, UINavigationControllerDelegate {
         scrollView.addSubview(lastNameField)
         scrollView.addSubview(emailField)
         scrollView.addSubview(passwordField)
+        scrollView.addSubview(confirmPasswordField)
         scrollView.addSubview(registerButton)
         
         imageView.isUserInteractionEnabled = true
@@ -161,8 +183,12 @@ class RegisterViewController: UIViewController, UINavigationControllerDelegate {
                                      y: emailField.bottom+10,
                                      width: scrollView.width-60,
                                      height: 52)
+        confirmPasswordField.frame = CGRect(x: 30,
+                                     y: passwordField.bottom+10,
+                                     width: scrollView.width-60,
+                                     height: 52)
         registerButton.frame = CGRect(x: 30,
-                                      y: passwordField.bottom+10,
+                                      y: confirmPasswordField.bottom+10,
                                       width: scrollView.width-60,
                                       height: 52)
     }
